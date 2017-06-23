@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+
+'use strict';
+
+const VerifyGw2BotCli = require('../src/cli');
+
+const botCli = new VerifyGw2BotCli();
+
+botCli.run();

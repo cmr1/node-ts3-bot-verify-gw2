@@ -1,14 +1,46 @@
 {
-  "name": "src",
+  "name": "cmr1-ts3-bot-verify-gw2",
+  "author": "CMR1",
+  "license": "MIT",
   "version": "1.0.0",
   "description": "",
+  "preferGlobal": true,
   "main": "gw2-verify-msgs.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node run.js"
+  "engines": {
+    "node": ">=6.x"
   },
-  "author": "",
-  "license": "ISC",
+  "bin": {
+    "ts3-bot-verify-gw2": "bin/ts3-bot-verify-gw2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmr1/node-ts3-bot-verify-gw2.git"
+  },
+  "keywords": [
+    "cmr1",
+    "ts",
+    "ts3",
+    "teamspeak",
+    "teamspeak3",
+    "bot",
+    "verify",
+    "verification",
+    "gw2",
+    "guildwars",
+    "guildwars2",
+    "woodhouse"
+  ],
+  "bugs": {
+    "url": "https://github.com/cmr1/node-ts3-bot-verify-gw2/issues"
+  },
+  "homepage": "https://github.com/cmr1/node-ts3-bot-verify-gw2#readme",
+  "scripts": {
+    "lint": "eslint ./src",
+    "lint-fix": "eslint ./src --fix",
+    "pretest": "npm run lint",
+    "test": "mocha test/**/*.spec.js",
+    "start": "node src/run.js"
+  },
   "dependencies": {
     "async": "^2.4.1",
     "cmr1-cli": "^0.1.6",
@@ -17,6 +49,8 @@
     "string-template": "^1.0.0"
   },
   "devDependencies": {
-    "eslint": "^4.0.0"
+    "chai": "^4.0.2",
+    "eslint": "^4.0.0",
+    "mocha": "^3.4.2"
   }
 }

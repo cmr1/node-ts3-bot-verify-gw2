@@ -1,6 +1,12 @@
 'use strict';
 
+const pkg = require('../package');
+
 module.exports = {
+  name: pkg.name,
+  version: pkg.version,
+  description: 'A bot to verify GuildWars2 account info within TeamSpeak3',
+  helpHeader: 'Available Options',
   optionDefinitions: [
     {
       name: 'name',

@@ -1,5 +1,6 @@
 'use strict';
 
 module.exports = {
-  cli: require('./cli.js')
+  cli: require('./cli'),
+  constants: require('./constants')
 };
